@@ -1,0 +1,15 @@
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: myapp
+  labels:
+    name: myapp
+    isActive: false
+    maxInstance: 10
+spec:
+  containers:
+  - name: myapp
+    image: nginx
+  - name: myapp
+    image: nginx
